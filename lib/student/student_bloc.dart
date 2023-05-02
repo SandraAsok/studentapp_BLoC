@@ -31,13 +31,7 @@ class StudentBloc extends Bloc<StudentEvent, StudentState> {
       } catch (e) {
         log(e.toString());
       }
-    }); //////
-    // on<FetchSpecificData>((event, emit) {
-    //   try {
-    //     final studentdata = StudentBox.getStudentData();
-    //     StudentModel student = studentdata.values.;
-    //   } catch (e) {}
-    // });
+    });
     on<UpdateSpecificData>((event, emit) {
       try {
         // final studentbox = StudentBox.getStudentData();
@@ -56,8 +50,6 @@ class StudentBloc extends Bloc<StudentEvent, StudentState> {
       try {
         studnetdata.deleteAt(event.index);
         add(FetchAllData());
-        // print(event.studentModel[event.index].name);
-        // print(event.studentModel.length);
       } catch (e) {
         log(e.toString());
       }
