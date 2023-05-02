@@ -42,7 +42,7 @@ class ScreenHome extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AddStudentWidget(),
+                      builder: (context) => const AddStudentWidget(),
                     ),
                   );
                   // Navigator.pop(context);

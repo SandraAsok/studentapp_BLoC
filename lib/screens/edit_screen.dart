@@ -58,7 +58,6 @@ class _EditScreenState extends State<EditScreen> {
 
               IconButton(
                   onPressed: () async {
-                    var path;
                     final PickedFile = await ImagePicker()
                         .pickImage(source: ImageSource.gallery);
                     if (PickedFile == null) {
